@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/vuesax/dist/vuesax.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
 <div id="app">
-<showmessage :message="message"></showmessage>   <vs-button vs-type="primary-filled" @click="$vs.notify({color:'dark',title:'Default',text:'Lorem ipsum dolor sit amet, consectetur'})">Click me</vs-button>
+    <showmessage :message="message"></showmessage>
+    <br>
+    <vs-button vs-type="primary-filled"
+               @click="$vs.notify({color:'dark',title:'Default',text:'Lorem ipsum dolor sit amet, consectetur'})">Click
+        me
+    </vs-button>
 </div>
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="./node_modules/vuesax/dist/vuesax.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
